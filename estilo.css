@@ -48,7 +48,7 @@ button:hover{
 
 
 header{
-    background-color: rgb(83, 83, 83);
+    background-color: rgb(38, 38, 38)
 }
 
 header .logo{
@@ -173,7 +173,6 @@ footer .container-fluid{
 
 @media (min-width: 720px){
     header{
-        position: fixed;
         width: 100%;
     }
 
@@ -182,11 +181,26 @@ footer .container-fluid{
         justify-content: space-between;
     }
 
-    header nav{
+  header nav{
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 15px;
     }
+
+ 
+    #carouselExampleSlidesOnly .carousel-item{
+        height: 475px;
+        width: 100%;
+        justify-content: center;
+        background-position: center;
+    }
+
+
+    #carouselExampleIndicators .carousel-item{
+        height: 570px;
+    }
+
+
 
     #somos-vconcecionario .container{
         display: flex;
@@ -214,7 +228,7 @@ footer .container-fluid{
     ,url(imgs/b8e454eb50e7179979962a8648e8e675.jpg);
         background-size: cover ;
         background-position: center center;
-        height: 800px;
+        height: 700px;
         width: 600px;
     }
 
@@ -223,6 +237,7 @@ footer .container-fluid{
         justify-content: center;
     }
     #nuestro-catalogo p{
+        font-size: 1.5em;
         display: block;
         margin-bottom: 40px;
     }
@@ -231,6 +246,8 @@ footer .container-fluid{
     }
     #nuestro-catalogo .carta{
         padding: 50px;
+        height: 700px;
+        width: 400px;
         
     }
     
