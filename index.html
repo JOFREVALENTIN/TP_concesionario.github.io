@@ -11,13 +11,46 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <header>
-        <div class="container">
-            <p class="logo">RacingConcencionario</p>
-            <nav>
-                <a href="#somos-vconcecionario">Quienes Somos</a>
-                <a href="#nuestro-catalogo">Nuestro Catalogo</a>
-                <a href="#sucursal">Sucursal</a>
-            </nav>
+        <div class="container-fluid">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id="naveg">
+  <div class="container-fluid">
+                <a class="navbar-brand" href="Index.html">
+            <img src="imgs/logo2.png" alt="aqui va el logo!" width="75" height="50" style="margin: 0; padding: 0%;">
+          </a>
+    <a class="navbar-brand" href="#somos-vconcecionario">Quienes Somos</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo.html">Catalogo</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Modelos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><img src="imgs/mclogo3.png" alt="aqui va el logo!" width="40" height="40" style="padding-right:10px;">Mclaren</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><img src="imgs/flogo2.png" alt="aqui va el logo!" width="38" height="40" style="padding-right:10px;">Ferrari</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><img src="imgs/llogo.png" alt="aqui va el logo!" width="42" height="40" style="padding-right:10px;">Lamborghini</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><img src="imgs/plogo.png" alt="aqui va el logo!" width="40" height="40" style="padding-right:10px;">Porsche</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
         </div>
     </header>
     <section id="hero">
@@ -26,18 +59,19 @@
 
     <section id="somos-vconcecionario">
         <div class="container">
+            
             <div class="img-container"></div>
             <div class="texto">
-
-                <h2>Somos <span class="color-acento">Vconcecionario</span></h2>
+                <h2>Somos<img src="imgs/logo2.png" alt="aqui va el logo!" width="100" height="80" style="margin: 0; padding: 0%; padding-left: 20px;"><span class="color-acento">Vconcecionario</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
             </div>
+            <div class="img-container2"></div>
         </div>
     </section>
 
     <section id="nuestro-catalogo">
         <div class="container">
-            <h2>Lo mas Lujoso</h2>
+            <h2>Los mas Exlusivos</h2>
             <div class="catalogo">
                 <div class="carta">
                     <h3>Ferrari</h3>
@@ -58,25 +92,25 @@
         </div>
     </section>
 
+
     <section id="sucursal">
-        <div class="container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8033.214308031647!2d-66.34502010282692!3d-33.296076726140384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d4394eec782487%3A0x2bcfdfba83514ad4!2sUniversidad%20Nacional%20de%20San%20Luis!5e1!3m2!1ses!2sar!4v1749425822797!5m2!1ses!2sar"
-                 width="1600" 
+        <div class="container-fluid" style="background-color: rgb(38, 38,38);">
+            <p style="text-align: center; justify-content: center; background-color: rgb(38, 38, 38);  color: white;"><img src="imgs/ubiv.png" alt="aqui va el logo!" width="55" height="35" style="padding-right:15px; padding-bottom: 4px;">Encuentranos en:</p>
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.02042288997!2d-66.34219442353393!3d-33.29212868942288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d4394eec782487%3A0x2bcfdfba83514ad4!2sUniversidad%20Nacional%20de%20San%20Luis!5e0!3m2!1ses!2sar!4v1749496561274!5m2!1ses!2sar" 
+                width="600"
                  height="450" 
-                 style="border:0;" 
-                 allowfullscreen="" 
-                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+                 style="border:0;"
+                  allowfullscreen=""
+                   loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
+            </div>
         </div>
     </section>
 
-    <section id="final">
-
-    </section>
-
     <footer>
-        <div class="container">
+        <div class="container-fluid">
             <p style="font-size: 1.0em;">&copy; Pagina Creada por Jofre Valentin</p>
         </div>
     </footer>

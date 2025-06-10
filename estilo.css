@@ -29,6 +29,12 @@ button{
     color: white;
     background-color: red;
 }
+#naveg{
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+
 
 button:hover{
     color: red;
@@ -40,8 +46,9 @@ button:hover{
     margin:auto
 }
 
+
 header{
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(83, 83, 83);
 }
 
 header .logo{
@@ -76,6 +83,7 @@ header a{
 header a:hover{
     color: red;
 }
+
 
 #hero{
     display: flex;
@@ -153,14 +161,15 @@ border-radius: 20px;
 
 }
 
-footer .container{
+footer .container-fluid{
     height: 50px;
     display: flex;
     justify-content: center center;
     align-items: flex end;
-    background-color: rgb(114, 0, 0);
+    background-color: rgb(38, 38, 38);
     color: rgb(255, 255, 255);
 }
+
 
 @media (min-width: 720px){
     header{
@@ -195,7 +204,7 @@ footer .container{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 150px;
+        padding-left: 70px;
     }
     #somos-vconcecionario .img-container{
             background-image: linear-gradient(
@@ -224,12 +233,6 @@ footer .container{
         padding: 50px;
         
     }
-
-
-
-
-
-
-
+    
 
 }
