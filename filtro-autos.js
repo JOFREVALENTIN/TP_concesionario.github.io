@@ -119,8 +119,15 @@ window.addEventListener("click", (e) => {
 // valida //
 document.getElementById("form-contacto").addEventListener("submit", (e) => {
   e.preventDefault();
+  const nombre = document.getElementById("nombre").value.trim();
   const email = document.getElementById("email").value.trim();
   const tel = document.getElementById("telefono").value.trim();
+
+
+  if(nombre.length()<3){
+    alert("El nombre debe tener al menos 3 caracteres");
+  }
+
 
   if (email === "" && tel === "") {
     alert("Debes completar al menos el correo o el teléfono.");
