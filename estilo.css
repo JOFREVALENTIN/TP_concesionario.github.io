@@ -29,11 +29,53 @@ button{
     color: white;
     background-color: red;
 }
-#naveg{
-    margin-top: 20px;
-    margin-bottom: 20px
+
+.btn-modelos {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #111;
+  border: none;
+  padding: 10px 22px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
+.btn-modelos:hover {
+  background-color: #111;
+  color: white;
+  transform: translateY(-2px);
+}
+
+
+
+
+
+.header-externo {
+  background-color: rgb(38, 38, 38);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#naveg {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+
+.navbar {
+  box-shadow: none !important;
+  border: none !important;
+}
 
 
 button:hover{
@@ -48,15 +90,8 @@ button:hover{
 
 
 header{
-    background-color: rgb(38, 38, 38)
-}
-
-header .logo{
-    margin: 0;
-    padding: 20px 30px;
-    font-weight: bold;
-    color: white;
-    font-size: 2.0em;
+ margin: 0;
+ padding: 0;
 }
 
 header.container{
@@ -84,32 +119,95 @@ header a:hover{
     color: red;
 }
 
+.carousel-item {
+  position: relative;
+}
 
-#hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),rgba(0,0,0,0.5)
-    )
-    ,url(imgs/imagen_combinada_autos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+.carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
 }
-#hero h1{
-    color: white;
-    font-weight: bold;
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+     z-index: 1;
+  background: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  pointer-events: none;
 }
+
+
+
+.carrusel-texto{
+    z-index: 2;
+    font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: none !important;
+  padding: 0;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.carrusel-textoslider{
+    z-index: 2;
+    font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 
 #somos-vconcecionario .container{
     text-align: center;
-    padding: 200px 10px;
+    padding: 80px 10px 80px;
 }
 
 
@@ -139,36 +237,143 @@ border-radius: 20px;
         0deg,
         rgba(0,0,0,0.3),rgba(0,0,0,0.3)
     )
-    ,url(imgs/ferrari3.jpg);
+    ,url(imgs/feraricarta.jpg);
 }
 .carta:nth-child(2){
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.3),rgba(0,0,0,0.3)
     )
-    ,url(imgs/mclaren.jpg);
+    ,url(imgs/cartanc.jpg);
 }
 .carta:nth-child(3){
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.3),rgba(0,0,0,0.3)
     )
-    ,url(imgs/lambo.jpg);
+    ,url(imgs/lambocarta.jpg);
 }
+
+
+
+
+.tienda-banner {
+  display: block;
+  position: relative;
+  background-image: url("imgs/banner-tienda.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin: 50px auto;
+  text-decoration: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.tienda-banner:hover {
+  transform: scale(1.01);
+}
+
+.tienda-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.55);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.tienda-banner-overlay h2 {
+  font-size: 2.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.tienda-banner-overlay p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+
+
+
 
 #sucursal {
     background-position: center;
 
 }
 
-footer .container-fluid{
-    height: 50px;
-    display: flex;
-    justify-content: center center;
-    align-items: flex end;
-    background-color: rgb(38, 38, 38);
-    color: rgb(255, 255, 255);
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px 10px;
+  font-size: 0.95rem;
 }
+
+.footer-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ff6a00;
+}
+
+.footer-social img {
+  width: 24px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+
+
 
 
 @media (min-width: 720px){
@@ -189,10 +394,8 @@ footer .container-fluid{
 
  
     #carouselExampleSlidesOnly .carousel-item{
-        height: 475px;
+        height: 768px;
         width: 100%;
-        justify-content: center;
-        background-position: center;
     }
 
 
@@ -200,8 +403,7 @@ footer .container-fluid{
         height: 570px;
     }
 
-
-
+    
     #somos-vconcecionario .container{
         display: flex;
         justify-content: center;

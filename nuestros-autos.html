@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Nuestros autos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="catalogoe.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Electrolize&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <header>
+    <div class="container-fluid header-externo">
+      <nav class="navbar navbar-expand-lg" id="naveg">
+        <div class="container-fluid nav-interno">
+          <a class="navbar-brand" href="Index.html">
+            <img src="imgs/logo2.png" alt="aqui va el logo!" width="75" height="50" style="margin: 0; padding: 0%;">
+          </a>
+          <a class="navbar-brand" href="index.html#somos-vconcecionario">Quienes Somos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nuestros-autos.html" target="_blank">Nuestros autos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalogo.html" target="_blank">Catalogo</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Modelos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="nuestros-autos.html#mcindex"><img src="imgs/mclogo3.png"
+                        alt="aqui va el logo!" width="40" height="40" style="padding-right:10px;">Mclaren</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="nuestros-autos.html#ferrariindex"><img src="imgs/flogo2.png"
+                        alt="aqui va el logo!" width="38" height="40" style="padding-right:10px;">Ferrari</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="nuestros-autos.html#lamboindex"><img src="imgs/llogo.png"
+                        alt="aqui va el logo!" width="42" height="40" style="padding-right:10px;">Lamborghini</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="nuestros-autos.html#porscheindex"><img src="imgs/plogo.png"
+                        alt="aqui va el logo!" width="40" height="40" style="padding-right:10px;">Porsche</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="redes-sociales d-flex align-items-center ms-auto">
+              <button class="btn btn-especificaciones btn-contacto me-3" data-id="navbar">Contáctanos</button>
+              <a href="https://api.whatsapp.com/send?phone=26656123456" target="_blank" class="mx-2">
+                <img src="imgs/whatsapp.png" alt="" width="40" height="40">
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="mx-2">
+                <img src="imgs/instagram.png" alt="" width="40" height="40">
+              </a>
+              <a href="https://x.com/" target="_blank" class="mx-2">
+                <img src="imgs/x.png" alt="" width="40" height="40">
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+
+  <section class="marca-autos ferrari fondo-blanco" style="margin-top: 120px;">
+    <div class="marca-titulo" id="ferrariindex">
+      <h2>Ferrari</h2>
+    </div>
+
+    <!--Ferrari1-->
+    <div class="modelo-info" id="SF90">
+      <div class="imagen">
+        <img src="imgs/sf90.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>Ferrari SF90 Stradale</h3>
+        <p>Un superdeportivo híbrido enchufable que marca el futuro de Ferrari.</p>
+
+        <button class="btn-ferrari btn-toggle-especificaciones" data-id="sf90">Especificaciones</button>
+
+        <div class="descripcion-auto" id="sf90" style="display: none;">
+          <p><strong>Motor:</strong> V8 biturbo + 3 motores eléctricos (986 HP)<br>
+            <strong>Velocidad máxima:</strong> 340 km/h<br>
+            <strong>Aceleración:</strong> 0 a 100 km/h en 2.5 segundos<br>
+            <strong>Descripción:</strong> El SF90 Stradale es el primer Ferrari híbrido enchufable de producción masiva.
+            Con un motor V8 biturbo y tres motores eléctricos, entrega una potencia total de 986 HP. La tracción total y
+            su sistema eSSC le permiten alcanzar los 100 km/h en tan solo 2.5 segundos. Combina innovación tecnológica
+            con una estética agresiva y refinada.<br><strong>Precio estimado:</strong> USD $520,000 <br> <br>
+            <button class="btn-ferrari btn-contacto">Contáctanos Por Este Auto</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <hr class="separador-negro">
+
+    <!--Ferrari2-->
+    <div class="modelo-info invertido" id="LaFerrari">
+      <div class="imagen">
+        <img src="imgs/laferari.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>Ferrari La Ferrari</h3>
+        <p>Híbrido V12 con diseño futurista, creado como el pináculo de la ingeniería Ferrari.</p>
+
+        <button class="btn-ferrari btn-toggle-especificaciones" data-id="laferrari">Especificaciones</button>
+
+        <div class="descripcion-auto" id="laferrari" style="display: none;">
+          <p><strong>Motor:</strong> V12 Atmosferico (950 HP)<br>
+            <strong>Velocidad máxima:</strong> 372 km/h<br>
+            <strong>Aceleración:</strong> 0-100 kph en 2,9 segundos.<br>
+            <strong>Descripción:</strong> LaFerrari es una obra maestra de ingeniería: un hiperdeportivo híbrido
+            limitado a 499 unidades. Incorpora un motor V12 atmosférico y un sistema eléctrico derivado de la F1
+            (HY-KERS), alcanzando 950 HP. Su aerodinámica activa y chasis de fibra de carbono lo convierten en una
+            leyenda moderna.<br><strong>Precio estimado:</strong> $USD 1,500,000 <br> <br>
+            <button class="btn-ferrari btn-contacto">Contáctanos Por Este Auto</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="separador-negro">
+
+    <!--Ferrari3-->
+    <div class="modelo-info" id="812 Superfast">
+      <div class="imagen">
+        <img src="imgs/812.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>Ferrari 812 Superfast</h3>
+        <p>Un GT con motor V12 atmosférico que combina potencia brutal con refinamiento clásico.</p>
+
+        <button class="btn-ferrari btn-toggle-especificaciones" data-id="812">Especificaciones</button>
+
+        <div class="descripcion-auto" id="812" style="display: none;">
+          <p><strong>Motor:</strong> V12 6.5 Litros (800 HP)<br>
+            <strong>Velocidad máxima:</strong> 320 km/h<br>
+            <strong>Aceleración:</strong> 0-100 kph en 2,80 segundos.<br>
+            <strong>Descripción:</strong> El Ferrari 812 Superfast es el Gran Turismo más potente de la historia de la
+            marca con motor atmosférico. Su V12 de 6.5 litros entrega 800 HP a 8.500 rpm y un sonido inconfundible. Con
+            tracción trasera y dirección en las cuatro ruedas, logra un equilibrio perfecto entre confort en ruta y
+            agresividad en pista. Un homenaje moderno al clásico Ferrari con motor delantero.<br><strong>Precio
+              estimado:</strong> USD $410,000 <br> <br>
+            <button class="btn-ferrari btn-contacto">Contáctanos Por Este Auto</button>
+          </p>
+        </div>
+      </div>
+  </section>
+
+
+
+  <hr class="separador-negro">
+
+
+
+  <section class="marca-autos mclaren fondo-negro">
+    <div class="marca-titulo" id="mcindex">
+      <h2>McLaren</h2>
+    </div>
+
+    <!--MClaren1-->
+    <div class="modelo-info invertido" id="Senna">
+      <div class="imagen">
+        <img src="imgs/senna.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>McLaren Senna</h3>
+        <p>Un superauto enfocado completamente en la pista, diseñado para máxima aerodinámica y precisión.</p>
+
+        <button class="btn-mc btn-toggle-especificaciones" data-id="senna">Especificaciones</button>
+
+        <div class="descripcion-auto" id="senna" style="display: none;">
+          <p><strong>Motor:</strong> V8 biturbo de (800 HP)<br>
+            <strong>Velocidad máxima:</strong> 335 km/h<br>
+            <strong>Aceleración:</strong> 0 a 100 km/h en 2.8 segundos<br>
+            <strong>Descripción:</strong> Nombrado en honor al legendario Ayrton Senna, este modelo está enfocado en el
+            rendimiento de pista. Su motor V8 biturbo genera 800 HP, con una carrocería ultraligera de fibra de carbono.
+            Cada detalle fue pensado para la eficiencia aerodinámica, desde su enorme alerón trasero hasta sus entradas
+            de aire activas.<br><strong>Precio estimado:</strong> $USD 960,000 <br> <br>
+            <button class="btn-mc btn-contacto">Contáctanos Por Este Auto</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr class="separador">
+
+    <!--MClaren2-->
+    <div class="modelo-info" id="P1">
+      <div class="imagen">
+        <img src="imgs/p1.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>McLaren P1</h3>
+        <p>Hiperauto híbrido que combina tecnología de Fórmula 1 con diseño extremo para la calle.</p>
+
+        <button class="btn-mc btn-toggle-especificaciones" data-id="p1">Especificaciones</button>
+
+        <div class="descripcion-auto" id="p1" style="display: none;">
+          <p><strong>Motor:</strong> V8 biturbo + Motor electrico (900 HP)<br>
+            <strong>Velocidad máxima:</strong> 386 km/h<br>
+            <strong>Aceleración:</strong> 0 a 100 km/h en 2.6 segundos<br>
+            <strong>Descripción:</strong> El P1 fue el primer gran superauto híbrido de McLaren. Su sistema combina un
+            V8 biturbo con un motor eléctrico para alcanzar los 903 HP. Con un diseño futurista, materiales avanzados y
+            un modo eléctrico puro, es tan ecológica como brutal.<br><strong>Precio estimado:</strong> $USD 1,150,000
+            <br> <br>
+            <button class="btn-mc btn-contacto">Contáctanos Por Este Auto</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr class="separador">
+
+    <!--MClaren3-->
+    <div class="modelo-info invertido" id="650S">
+      <div class="imagen">
+        <img src="imgs/650s.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>McLaren 650S</h3>
+        <p>Superdeportivo V8 que combina líneas elegantes con precisión británica en pista y ciudad.</p>
+
+        <button class="btn-mc btn-toggle-especificaciones" data-id="650s">Especificaciones</button>
+
+        <div class="descripcion-auto" id="650s" style="display: none;">
+          <p><strong>Motor:</strong> V8 biturbo (650 HP)<br>
+            <strong>Velocidad máxima:</strong> 332 km/h<br>
+            <strong>Aceleración:</strong> 0 a 100 km/h en 3.0 segundos<br>
+            <strong>Descripción:</strong> El 650S es el equilibrio entre lujo y rendimiento para el día a día. Su motor
+            V8 biturbo de 650 HP comparte tecnología con el MP4-12C, pero mejora en todos los aspectos: suspensión,
+            aerodinámica y diseño.<br><strong>Precio estimado:</strong> USD $280,000 <br> <br>
+            <button class="btn-mc btn-contacto">Contáctanos Por Este Auto</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="marca-autos lamborghini fondo-blanco">
+    <div class="marca-titulo" id="lamboindex">
+      <h2>Lamborghini</h2>
+    </div>
+
+    <!--Lambo1-->
+    <div class="modelo-info" id="Veneno">
+      <div class="imagen">
+        <img src="imgs/veneno2.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>Lamborghini Veneno</h3>
+        <p>Uno de los modelos más exclusivos del mundo, con líneas radicales y espíritu de competición..</p>
+
+        <button class="btn-lambo btn-toggle-especificaciones" data-id="veneno">Especificaciones</button>
+
+        <div class="descripcion-auto" id="veneno" style="display: none;">
+          <p><strong>Motor:</strong> V12 de 6.5 Litros (750 H´P)<br>
+            <strong>Velocidad máxima:</strong> 355 km/h<br>
+            <strong>Aceleración:</strong> 0 a 100 km/h en 2.8 segundos<br>
+            <strong>Descripción:</strong> Creado para celebrar los 50 años de la marca, el Lamborghini Veneno es una
+            pieza ultra exclusiva de solo 13 unidades. Monta un motor V12 de 6.5L que genera 750 HP, alcanzando los 100
+            km/h en 2.8 segundos. Su diseño extremo y aerodinámica inspirada en prototipos lo hacen más nave espacial
+            que superdeportivo.<br><strong>Precio estimado:</strong> USD $4,500,000 <br> <br>
+            <button class="btn-lambo btn-contacto">Contáctanos Por Este Auto</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="separador-negro">
+
+    <!--Lambo2-->
+    <div class="modelo-info invertido" id="Centenario">
+      <div class="imagen">
+        <img src="imgs/centenario.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>Lamborghini Centenario</h3>
+        <p>Edición limitada que rinde tributo a Ferruccio Lamborghini con un diseño extremo y agresivo.</p>
+
+        <button class="btn-lambo btn-toggle-especificaciones" data-id="centenario">Especificaciones</button>
+
+        <div class="descripcion-auto" id="centenario" style="display: none;">
+          <p><strong>Motor:</strong> V12 de 6.5 Litros (770 HP)<br>
+            <strong>Velocidad máxima:</strong> 350 km/h<br>
+            <strong>Aceleración:</strong> 0 a 100 km/h en 2.8 segundos<br>
+            <strong>Descripción:</strong> Homenaje al centenario de nacimiento de Ferruccio Lamborghini, esta edición
+            limitada a 40 unidades (20 coupé y 20 roadster) está equipada con un V12 de 770 HP. Cuenta con aerodinámica
+            activa, dirección en las cuatro ruedas y uno de los interiores más avanzados jamás producidos por la
+            marca.<br><strong>Precio estimado:</strong> USD $2,000,000 <br> <br>
+            <button class="btn-lambo btn-contacto">Contáctanos Por Este Auto</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="separador-negro">
+
+    <!--Lambo3-->
+    <div class="modelo-info" id="Aventador SV">
+      <div class="imagen">
+        <img src="imgs/aventador.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>Lamborghini Aventador SV</h3>
+        <p>Versión refinada del Aventador con más potencia, aerodinámica y un rugido V12 inolvidable.</p>
+
+        <button class="btn-lambo btn-toggle-especificaciones" data-id="aventador">Especificaciones</button>
+
+        <div class="descripcion-auto" id="aventador" style="display: none;">
+          <p><strong>Motor:</strong> V12 de 6.5 Litros (750 HP)<br>
+            <strong>Velocidad máxima:</strong> 350 km/h<br>
+            <strong>Aceleración:</strong> 0 a 100 km/h en 3.0 segundos<br>
+            <strong>Descripción:</strong> El Aventador SV (Super Veloce) lleva el icónico motor V12 de 6.5L a 750 HP,
+            rebajando el peso y mejorando la aerodinámica respecto al modelo base. Ofrece un manejo más agresivo,
+            tracción total y una experiencia de conducción que solo un Lamborghini puede dar.<br><strong>Precio
+              estimado:</strong> USD $500,000 <br> <br>
+            <button class="btn-lambo btn-contacto">Contáctanos Por Este Auto</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="separador-negro">
+
+
+
+  <section class="marca-autos porsche fondo-negro">
+    <div class="marca-titulo" id="porscheindex">
+      <h2>Porsche</h2>
+    </div>
+
+    <!--Porsche1-->
+    <div class="modelo-info invertido" id="911 GT2 RS">
+      <div class="imagen">
+        <img src="imgs/gt2rs.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>Porsche 911 GT2 RS</h3>
+        <p>El 911 más extremo jamás producido, con un enfoque brutal en el rendimiento.</p>
+
+        <button class="btn-porsche btn-toggle-especificaciones" data-id="gt2rs">Especificaciones</button>
+
+        <div class="descripcion-auto" id="gt2rs" style="display: none;">
+          <p><strong>Motor:</strong> Bóxer 6 cilindros biturbo 700 HP<br>
+            <strong>Velocidad máxima:</strong> 340 km/h<br>
+            <strong>Aceleración:</strong> 0 a 100 km/h en 2.7 segundos<br>
+            <strong>Descripción:</strong> El 911 GT2 RS es el Porsche de producción más potente jamás construido. Con su
+            motor bóxer 3.8L biturbo de 700 HP y tracción trasera, alcanza los 100 km/h en 2.7 segundos. Su chasis
+            ligero, suspensión deportiva y diseño agresivo lo convierten en una bestia nacida para el
+            circuito.<br><strong>Precio estimado:</strong> USD $330,000 <br> <br>
+            <button class="btn-porsche btn-contacto">Contáctanos Por Este Auto</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <hr class="separador">
+
+    <!--Porsche2-->
+    <div class="modelo-info" id="918 Spyder">
+      <div class="imagen">
+        <img src="imgs/918.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>Porsche 918 Spyder</h3>
+        <p>Superauto híbrido enchufable que redefine la velocidad y eficiencia con ingeniería alemana pura.</p>
+
+        <button class="btn-porsche btn-toggle-especificaciones" data-id="918">Especificaciones</button>
+
+        <div class="descripcion-auto" id="918" style="display: none;">
+          <p><strong>Motor:</strong> V8 4.6L + 2 Motres Electricos (890 HP)<br>
+            <strong>Velocidad máxima:</strong> 345 km/h<br>
+            <strong>Aceleración:</strong> 0 a 100 km/h en 2.5 segundos<br>
+            <strong>Descripción:</strong> Híbrido enchufable con motor V8 de 4.6L más dos motores eléctricos, el 918
+            Spyder entrega 887 HP. Fue parte de la “santa trinidad” de los hiperdeportivos junto al P1 y LaFerrari. Solo
+            se fabricaron 918 unidades. Su rendimiento eléctrico no compromete su alma deportiva.<br><strong>Precio
+              estimado:</strong> USD $1,200,000 <br> <br>
+            <button class="btn-porsche btn-contacto">Contáctanos Por Este Auto</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="separador">
+
+    <!--Porsche3-->
+    <div class="modelo-info invertido" id="Cayman GT4">
+      <div class="imagen">
+        <img src="imgs/caymangt3.png" alt="">
+      </div>
+      <div class="contenido">
+        <h3>Porsche Cayman GT4</h3>
+        <p>Versión extrema del Cayman con alma de pista, precisión quirúrgica y motor atmosférico de alto régimen.</p>
+
+        <button class="btn-porsche btn-toggle-especificaciones" data-id="cayman">Especificaciones</button>
+
+        <div class="descripcion-auto" id="cayman" style="display: none;">
+          <p><strong>Motor:</strong> Boxer ATmosferico de 4.0 Litros (500 HP)<br>
+            <strong>Velocidad máxima:</strong> 304 km/h<br>
+            <strong>Aceleración:</strong> 0 a 100 km/h en 3.7 segundos<br>
+            <strong>Descripción:</strong> Por primera vez en la historia del Cayman, Porsche le instaló el motor
+            atmosférico del 911 GT3: un 4.0L de 500 HP con caja PDK de 7 marchas. Más liviano, más agresivo y más sonoro
+            que nunca, el GT4 RS redefine lo que un auto compacto puede hacer en pista.<br><strong>Precio
+              estimado:</strong> USD $210,000 <br> <br>
+            <button class="btn-porsche btn-contacto">Contáctanos Por Este Auto</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-logo">
+        <h2>V-Class Automotive</h2>
+        <p>Pasión por la velocidad, precisión y elegancia.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Seguinos</h4>
+        <div class="social-icons">
+          <a href="#"><img src="imgs/whatsapp.png" alt=""></a>
+          <a href="#"><img src="imgs/instagram.png" alt=""></a>
+          <a href="#"><img src="imgs/x.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; V-Class Automotive. Todos los derechos reservados.</p>
+      <p>Sitio web creado por Jofre Valentin</p>
+    </div>
+  </footer>
+
+
+
+
+  <div id="modal-contacto" class="modal-contacto">
+    <div class="modal-contenido">
+      <span class="cerrar-modal">&times;</span>
+      <p id="modelo-consulta" style="margin-bottom: 15px; font-weight: 500;"></p>
+      <h3>Contáctanos por este vehículo</h3>
+      <form id="form-contacto">
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono">
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-dark">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="filtro-autos.js"></script>
+
+
+
+
+
+
+  <script>
+    document.querySelectorAll('.btn-toggle-especificaciones').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-id');
+        const desc = document.getElementById(id);
+
+        if (desc) {
+          desc.style.display = (desc.style.display === 'none') ? 'block' : 'none';
+        }
+      });
+    });
+  </script>
+
+
+
+</body>

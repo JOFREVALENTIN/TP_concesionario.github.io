@@ -1,0 +1,123 @@
+[
+  {
+    "id": "sf90",
+    "marca": "Ferrari",
+    "modelo": "SF90",
+    "precio": 520000,
+    "imagen": "imgs/sf90.png",
+   "tipo": "Hibrido",
+    "traccion": "AWD"
+  },
+  {
+    "id": "laferrari",
+    "marca": "Ferrari",
+    "modelo": "LaFerrari",
+    "precio": 1500000,
+    "imagen": "imgs/laferari.png",
+    "tipo": "Hibrido",
+    "traccion": "RWD"
+  },
+  {
+    "id":"812",
+    "marca":"Ferrari",
+    "modelo":"812 Superfast",
+    "precio": 410000,
+    "imagen":"imgs/812.png",
+    "tipo": "Gasolina",
+    "traccion": "RWD"
+  },
+
+
+  
+  {
+    "id": "senna",
+    "marca": "McLaren",
+    "modelo": "Senna",
+    "precio": 960000,
+    "imagen": "imgs/senna.png",
+     "tipo": "Gasolina",
+    "traccion": "RWD"
+  },
+  {
+    "id": "p1",
+    "marca": "McLaren",
+    "modelo": "P1",
+    "precio": 1150000,
+    "imagen": "imgs/p1.png",
+     "tipo": "Hibrido",
+    "traccion": "RWD"
+  },
+  {
+    "id": "650s",
+    "marca": "McLaren",
+    "modelo": "650S",
+    "precio": 280000,
+    "imagen": "imgs/650s.png",
+    "tipo": "Gasolina",
+    "traccion": "RWD"
+  },
+
+
+
+
+
+  {
+    "id": "veneno",
+    "marca": "Lamborghini",
+    "modelo": "Veneno",
+    "precio": 4500000,
+    "imagen": "imgs/veneno2.png",
+    "tipo": "Gasolina",
+    "traccion": "AWD"
+  },
+  {
+    "id": "centenario",
+    "marca": "Lamborghini",
+    "modelo": "Centenario",
+    "precio": 2000000,
+    "imagen": "imgs/centenario.png",
+     "tipo": "Gasolina",
+    "traccion": "AWD"
+  },
+  {
+    "id": "aventador",
+    "marca": "Lamborghini",
+    "modelo": "Aventador SV",
+    "precio": 500000,
+    "imagen": "imgs/aventador.png",
+    "tipo": "Gasolina",
+    "traccion": "AWD"
+  },
+  
+  
+  
+  
+  {
+    "id": "gt2rs",
+    "marca": "Porsche",
+    "modelo": "911 GT2 RS",
+    "precio": 330000,
+    "imagen": "imgs/gt2rs.png",
+     "tipo": "Gasolina",
+    "traccion": "RWD"
+  },
+  {
+    "id": "918spyder",
+    "marca": "Porsche",
+    "modelo": "918 Spyder",
+    "precio": 1200000,
+    "imagen": "imgs/918.png",
+    "tipo": "Hibrido",
+    "traccion": "AWD"
+  },
+
+  {
+     "id": "cayman",
+    "marca": "Porsche",
+    "modelo": "Cayman GT4",
+    "precio": 210000,
+    "imagen":"imgs/caymangt3.png",
+    "tipo": "Gasolina",
+    "traccion": "RWD"
+  }
+]
