@@ -215,19 +215,23 @@
   <div id="modal-contacto" class="modal-contacto">
     <div class="modal-contenido">
       <span class="cerrar-modal">&times;</span>
+      <p id="modelo-consulta" style="margin-bottom: 15px; font-weight: 500;"></p>
       <h3>Contáctanos por este vehículo</h3>
       <form id="form-contacto">
         <div class="form-group">
           <label for="nombre">Nombre completo</label>
           <input type="text" id="nombre" required>
+            <small class="error-text" id="error-nombre"></small>
         </div>
         <div class="form-group">
           <label for="email">Correo electrónico</label>
           <input type="email" id="email">
+            <small class="error-text" id="error-email"></small>
         </div>
         <div class="form-group">
           <label for="telefono">Teléfono</label>
           <input type="tel" id="telefono">
+            <small class="error-text" id="error-telefono"></small>
         </div>
         <div class="form-group text-center">
           <button type="submit" class="btn btn-dark">Enviar</button>
@@ -235,10 +239,10 @@
       </form>
     </div>
   </div>
-
-  <div id="mensaje-exito" class="mensaje-exito oculto">
+    <div id="mensaje-exito" class="mensaje-exito oculto">
     Mensaje enviado con exito
 </div>
+
 
 
 

@@ -123,35 +123,84 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!form) return;
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    const nombre = document.getElementById("nombre").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const telefono = document.getElementById("telefono").value.trim();
+  const campoNombre = document.getElementById("nombre");
+  const campoEmail = document.getElementById("email");
+  const campoTelefono = document.getElementById("telefono");
 
-    if (nombre.length < 3 || /\d/.test(nombre)) {
-      alert("El nombre debe tener al menos 3 caracteres y no debe contener  numeros");
-      return;
-    }
+  const errorNombre = document.getElementById("error-nombre");
+  const errorEmail = document.getElementById("error-email");
+  const errorTelefono = document.getElementById("error-telefono");
 
-    if ((email === "" && telefono === "") || isNaN(telefono)) {
-      alert("Debes completar al menos el correo o el teléfono ( El Telefono no debe contener letras).");
-      return;
-    }
+  const nombre = campoNombre.value.trim();
+  const email = campoEmail.value.trim();
+  const telefono = campoTelefono.value.trim();
 
-    // Mostrar mensaje de éxito
-    mensaje.classList.remove("oculto");
+  const nombreValido = /^[A-Za-zÁÉÍÓÚÑáéíóúñ\s]+$/.test(nombre) && nombre.length >= 3;
+  const emailValido = /^[a-zA-Z0-9._%+-]+@(gmail|hotmail|outlook|yahoo)\.(com|com\.ar|net)$/.test(email);
+  const telefonoValido = /^[0-9]{6,15}$/.test(telefono);
 
-    // Ocultar modal
-    document.getElementById("modal-contacto").style.display = "none";
-
-    // Ocultar el mensaje después de 3 segundos
-    setTimeout(() => {
-      mensaje.classList.add("oculto");
-    }, 3000);
-
-    // Resetear el formulario
-    form.reset();
+  // Limpiar errores previos
+  [campoNombre, campoEmail, campoTelefono].forEach(input => {
+    input.classList.remove("validado", "invalido");
   });
+  [errorNombre, errorEmail, errorTelefono].forEach(error => {
+    error.textContent = "";
+  });
+
+  let validacionCorrecta = true;
+
+  // Nombre
+  if (!nombreValido) {
+    campoNombre.classList.add("invalido");
+    errorNombre.textContent = "Solo letras. Mínimo 3 caracteres. Sin símbolos.";
+    validacionCorrecta = false;
+  } else {
+    campoNombre.classList.add("validado");
+  }
+
+  // Al menos uno requerido
+  if (email === "" && telefono === "") {
+    campoEmail.classList.add("invalido");
+    campoTelefono.classList.add("invalido");
+    errorEmail.textContent = "Completá al menos uno de los dos campos.";
+    errorTelefono.textContent = "Completá al menos uno de los dos campos.";
+    validacionCorrecta = false;
+  }
+
+  // Email
+  if (email !== "" && !emailValido) {
+    campoEmail.classList.add("invalido");
+    errorEmail.textContent = "Correo inválido. Ej: nombre@gmail.com";
+    validacionCorrecta = false;
+  } else if (email !== "") {
+    campoEmail.classList.add("validado");
+  }
+
+  // Telefono
+  if (telefono !== "" && !telefonoValido) {
+    campoTelefono.classList.add("invalido");
+    errorTelefono.textContent = "Solo números (6 a 15 dígitos).";
+    validacionCorrecta = false;
+  } else if (telefono !== "") {
+    campoTelefono.classList.add("validado");
+  }
+
+  if (!validacionCorrecta) return;
+
+
+  mensaje.classList.remove("oculto");
+  document.getElementById("modal-contacto").style.display = "none";
+
+  setTimeout(() => {
+    mensaje.classList.add("oculto");
+  }, 3000);
+
+  form.reset();
+  [campoNombre, campoEmail, campoTelefono].forEach(input => {
+    input.classList.remove("validado", "invalido");
+  });
+});
 });

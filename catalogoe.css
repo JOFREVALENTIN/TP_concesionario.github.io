@@ -395,6 +395,28 @@ border: none;
   pointer-events: none;
 }
 
+input:invalid {
+  border: 2px solid #e53935;
+}
+
+input.validado {
+  border: 2px solid #4caf50;
+}
+
+input.invalido {
+  border: 2px solid #e53935;
+}
+
+
+
+.error-text {
+  color: #e53935;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  display: block;
+  height: 18px;
+}
+
 
 
 
