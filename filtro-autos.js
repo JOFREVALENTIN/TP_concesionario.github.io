@@ -130,13 +130,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = document.getElementById("email").value.trim();
     const telefono = document.getElementById("telefono").value.trim();
 
-    if (nombre.length < 3) {
-      alert("El nombre debe tener al menos 3 caracteres");
+    if (nombre.length < 3 || /\d/.test(nombre)) {
+      alert("El nombre debe tener al menos 3 caracteres y no debe contener  numeros");
       return;
     }
 
-    if (email === "" && telefono === "") {
-      alert("Debes completar al menos el correo o el teléfono.");
+    if ((email === "" && telefono === "") || isNaN(telefono)) {
+      alert("Debes completar al menos el correo o el teléfono ( El Telefono no debe contener letras).");
       return;
     }
 
