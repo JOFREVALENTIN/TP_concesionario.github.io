@@ -117,54 +117,41 @@ window.addEventListener("click", (e) => {
 
 
 // valida //
-document.getElementById("form-contacto").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const nombre = document.getElementById("nombre").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const tel = document.getElementById("telefono").value.trim();
-
-
-  if(nombre.length()<3){
-    alert("El nombre debe tener al menos 3 caracteres");
-  }
-
-
-  if (email === "" && tel === "") {
-    alert("Debes completar al menos el correo o el teléfono.");
-    return;
-  }
-
-  alert("Formulario enviado correctamente (demo).");
-  document.getElementById("modal-contacto").style.display = "none";
-  e.target.reset();
-});
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector("#modal-contacto form");
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("form-contacto");
   const mensaje = document.getElementById("mensaje-exito");
 
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // evita el envío real
+  if (!form) return;
 
-      // mostrar mensaje /7
-      mensaje.classList.remove("oculto");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
+    const nombre = document.getElementById("nombre").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const telefono = document.getElementById("telefono").value.trim();
 
-      document.getElementById("modal-contacto").style.display = "none";
+    if (nombre.length < 3) {
+      alert("El nombre debe tener al menos 3 caracteres");
+      return;
+    }
 
-      // ocultar luego de 3 segundos //
-      setTimeout(() => {
-        mensaje.classList.add("oculto");
-      }, 3000);
+    if (email === "" && telefono === "") {
+      alert("Debes completar al menos el correo o el teléfono.");
+      return;
+    }
 
-      // eesetear formulario //
-      form.reset();
-    });
-  }
+    // Mostrar mensaje de éxito
+    mensaje.classList.remove("oculto");
+
+    // Ocultar modal
+    document.getElementById("modal-contacto").style.display = "none";
+
+    // Ocultar el mensaje después de 3 segundos
+    setTimeout(() => {
+      mensaje.classList.add("oculto");
+    }, 3000);
+
+    // Resetear el formulario
+    form.reset();
+  });
 });
-
